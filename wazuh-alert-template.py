@@ -1,10 +1,8 @@
 #!/var/ossec/framework/python/bin/python3
 
-#Integración de Correo Electrónico para Wazuh
 #Autor: Matías Marrero🚀
 #Creado en: Septiembre de 2023
 #GitHub: https://github.com/Darka94/
-#OPENSOURCE WAZUH
 
 
 import json
@@ -31,14 +29,14 @@ def generate_html(alert):
     t = time.strptime(alert['timestamp'].split('.')[0], '%Y-%m-%dT%H:%M:%S')
     timestamp = time.strftime('%c', t)
 
-    subject = 'Wazuh Alert: {0}, {1}'.format(description, agentname)
+    subject = 'SIEM Alert: {0}, {1}'.format(description, agentname)
 
     # Genera contenido HTML del mensaje
     html_message = f"""
     <html>
     <head>
       <meta charset="utf-8">
-      <title>Wazuh Alert</title>
+      <title>SIEM Alert</title>
       <style>
         body {{
           font-family: sans-serif;
@@ -52,8 +50,8 @@ def generate_html(alert):
     </head>
     <body>
       <div class="container">
-        <h2>Wazuh Alert</h2>
-        <p>This is an automatic message from your Wazuh Instance.</p>
+        <h2>SIEM Alert</h2>
+        <p>This is an automatic message from your SIEM Instance.</p>
         <p>On {timestamp}, an event from agent "{agentname}" triggered the rule "{description}" of level {level}.</p>
         <h3>Alert Details:</h3>
         <table>
