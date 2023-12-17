@@ -59,12 +59,12 @@ def generate_html(alert):
             <td>{description}</td>
           </tr>
           <tr>
-            <td>Level</td>
-            <td>{level}</td>
-          </tr>
-          <tr>
             <td>Agent</td>
             <td>{agentname}</td>
+          </tr>
+          <tr>
+            <td>Level</td>
+            <td>{level}</td>
           </tr>
           <tr>
             <td>Timestamp</td>
