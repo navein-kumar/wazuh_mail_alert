@@ -15,8 +15,8 @@ from email.mime.text import MIMEText
 # Configuración SMTP de Gmail
 smtp_server = "smtp.gmail.com"
 smtp_port = 587
-smtp_username = "testing.wazuh.geocom@gmail.com"  # Reemplaza con tu dirección de correo de Gmail
-smtp_password = "fgliyctgzonyvhiv"  # Reemplaza con tu contraseña de Gmail
+smtp_username = "testing.wazuh.geocom@gmail.com"  
+smtp_password = "fgliyctgzonyvhiv"  
 
 def generate_html(alert):
     """
