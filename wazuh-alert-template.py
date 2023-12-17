@@ -1,7 +1,6 @@
 #!/var/ossec/framework/python/bin/python3
 
-#Autor: Matías Marrero🚀
-#Creado en: Septiembre de 2023
+
 #GitHub: https://github.com/Darka94/
 
 
@@ -51,8 +50,8 @@ def generate_html(alert):
     <body>
       <div class="container">
         <h2>SIEM Alert</h2>
-        <p>This is an automatic message from your SIEM Instance.</p>
-        <p>On {timestamp}, an event from agent "{agentname}" triggered the rule "{description}" of level {level}.</p>
+        <p>This is an automatic message from SIEM Instance.</p>
+        <p>An event from agent "{agentname}" triggered the rule "{description}".</p>
         <h3>Alert Details:</h3>
         <table>
           <tr>
